@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/hasanaimroatun/wpu-githubJobsChallenge.git">
       Solution
     </a>
     <span> | </span>
@@ -37,20 +37,17 @@
 
 ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+You can see my demo on . I have have interest in web development since a few months ago. I have learned css, html, javascript, react, boostrap, vue, and sass from youtube and few website. I hope with more learn and practice from devChallenges can improve my skill in developing website.
 
 ### Built With
 
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Bootstrap](https://getbootstrap.com)
+- [VSCode](https://code.visualstudio.com)
+- [Fire Base Hosting](https://firebase.google.com)
+- [Geocoding API](https://open-meteo.com/en/docs/geocoding-api)
+- [Mapquest API](https://www.mapquestapi.com)
+
 
 ## Features
 
@@ -62,7 +59,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/hasanaimroatun/wpu-githubJobsChallenge.git
 
 # Install dependencies
 $ npm install
@@ -148,8 +145,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@hasanaimroatun](https://github.com/hasanaimroatun)
 
 
