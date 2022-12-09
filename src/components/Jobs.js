@@ -5,6 +5,7 @@ function Jobs() {
   return (
     <div>
         <div className='title'>Github <span>Jobs</span></div>
+        <div className='heroImg'></div>
     </div>
   )
 }
