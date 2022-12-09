@@ -42,6 +42,7 @@ You can see my demo on . I have have interest in web development since a few mon
 ### Built With
 
 - [React](https://reactjs.org/)
+- [React Icons](https://react-icons.github.io/react-icons)
 - [Bootstrap](https://getbootstrap.com)
 - [VSCode](https://code.visualstudio.com)
 - [Fire Base Hosting](https://firebase.google.com)
