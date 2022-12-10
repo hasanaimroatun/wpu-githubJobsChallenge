@@ -13,6 +13,36 @@ function Jobs() {
             <button className="btn btn-primary" type="button" id="button-addon2">Search</button>
           </div>
         </div>
+        <div className='row'>
+          <div className='col-4 sideNav'>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+              <label class="form-check-label" for="flexCheckDefault">
+                Full time
+              </label>
+            </div>
+
+            <form>
+              <div class="mb-3">
+                <label for="loation" class="form-label">LOCATION</label>
+                <input type="text" class="form-control" id="location" placeholder="City, state, zip code or country"/>
+              </div>
+            </form>
+
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+              <label class="form-check-label" for="flexRadioDefault1">
+                London
+              </label>
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+              <label class="form-check-label" for="flexRadioDefault1">
+                Amsterdam
+              </label>
+            </div>
+          </div>
+
+          <div className='col-8'></div>
+        </div>
     </div>
   )
 }
