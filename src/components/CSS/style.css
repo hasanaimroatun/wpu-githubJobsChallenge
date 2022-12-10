@@ -25,6 +25,7 @@ body {
   background-position: bottom left;
   background-size: cover;
   position: relative;
+  margin-bottom: 44px;
 }
 .heroImg .input-group {
   width: 75%;
