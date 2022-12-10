@@ -36,9 +36,9 @@ body {
 }
 .heroImg .input-group .iIcon {
   position: absolute;
+  z-index: 9;
   margin-top: 13px;
   margin-left: 12px;
-  z-index: 9;
 }
 .heroImg .input-group .form-control {
   border: none;
@@ -89,4 +89,74 @@ body {
 .heroImg .input-group #button-addon2:hover {
   background-color: #334680;
   border: 1px solid #334680;
+}
+
+.sideNav {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.sideNav .form-check {
+  margin-left: 12px;
+  margin-bottom: 15px;
+}
+.sideNav .form-check .form-check-input:focus {
+  box-shadow: none;
+  outline: none;
+}
+.sideNav .form-check .form-check-label {
+  font-weight: 500px;
+  line-height: 21px;
+  color: #334680;
+}
+.sideNav form {
+  position: relative;
+}
+.sideNav form .form-label {
+  margin-top: 15px;
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #B9BDCF;
+}
+.sideNav form .iIcon {
+  position: absolute;
+  z-index: 9;
+  margin-top: 65px;
+  margin-left: -58px;
+}
+.sideNav form .form-control {
+  height: 48px;
+  margin-bottom: 24.5px;
+  padding-left: 42px;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B9BDCF;
+}
+.sideNav form .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.sideNav form .form-control::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B9BDCF;
+}
+.sideNav form .form-control:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B9BDCF;
+}
+.sideNav form .form-control::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B9BDCF;
 }/*# sourceMappingURL=style.css.map */
