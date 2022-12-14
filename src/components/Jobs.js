@@ -1,5 +1,7 @@
 import React from 'react'
 import './CSS/style.css'
+import Cards from './Cards'
+import JobsDetails from './JobsDetails'
 import { MdOutlineWorkOutline } from 'react-icons/md'
 import { GoGlobe } from 'react-icons/go'
 
@@ -16,35 +18,39 @@ function Jobs() {
         </div>
 
         <div className='row'>
-          <div className='col-4 sideNav'>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label class="form-check-label" for="flexCheckDefault">
+          <div className='col-md-4 col-sm-12 sideNav'>
+            <div className="form-check">
+              <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+              <label className="form-check-label" htmlFor="flexCheckDefault">
                 Full time
               </label>
             </div>
 
             <form>
-                <label for="location" class="form-label">LOCATION</label>
+                <label htmlFor="location" className="form-label">LOCATION</label>
                 <GoGlobe size='1.2em' color='#B9BDCF' className='iIcon'/>
-                <input type="text" class="form-control" id="location" placeholder="City, state, zip code or country"/>
+                <input type="text" className="form-control" id="location" placeholder="City, state, zip code or country"/>
                 <div className="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                  <label className="form-check-label" htmlFor="flexRadioDefault1">
                     London
                   </label>
                 </div>
                 <div className="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                  <label class="form-check-label" for="flexRadioDefault1">
+                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+                  <label className="form-check-label" htmlFor="flexRadioDefault1">
                     Amsterdam
                   </label>
                 </div>
             </form>
           </div>
 
-          <div className='col-8'></div>
+          <div className='col-md-8 col-sm-12'>
+            <Cards />
+          </div>
         </div>
+        <JobsDetails />
+        <div className="createdBy">created by <a href="https://github.com/hasanaimroatun/wpu-githubJobsChallenge.git">hasanaimroatun</a> - devChallenges.io</div>
     </div>
   )
 }
