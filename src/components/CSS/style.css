@@ -2,6 +2,7 @@
 body {
   padding: 32px 120px 24px;
   text-align: left;
+  background-color: #f0f0f0 !important;
 }
 
 .title {
@@ -100,6 +101,7 @@ body {
   margin-bottom: 15px;
 }
 .sideNav .form-check .form-check-input:focus {
+  background-color: #FFFFFF !important;
   box-shadow: none;
   outline: none;
 }
@@ -127,6 +129,7 @@ body {
 .sideNav form .form-control {
   height: 48px;
   margin-bottom: 24.5px;
+  background-color: #FFFFFF !important;
   padding-left: 42px;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
@@ -159,4 +162,290 @@ body {
   font-size: 12px;
   line-height: 14.06px;
   color: #B9BDCF;
+}
+
+.card {
+  padding: 12px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  background-color: #FFFFFF !important;
+  border: none !important;
+}
+.card .imgContainer {
+  padding: 0;
+  margin-top: -7px;
+  width: 90px;
+  height: 90px;
+}
+.card .imgContainer .img-fluid {
+  width: 90px;
+}
+.card .card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  font-family: "Roboto", sans-serif;
+  color: #334680;
+}
+.card .card-body .card-text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  margin-bottom: 8px;
+}
+.card .card-body .card-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.09px;
+  margin-bottom: 12px;
+}
+.card .card-body .btn {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  border: 1px solid #334680;
+  border-radius: 4px;
+}
+.card .card-body .btn:hover, .card .card-body .btn:focus {
+  color: #FFFFFF;
+  background-color: #334680;
+}
+.card .card-body .locNTime {
+  white-space: nowrap;
+  margin-top: -12px;
+  position: absolute;
+  right: 0;
+}
+.card .card-body .locNTime .loc,
+.card .card-body .locNTime .time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B7BCCE;
+}
+.card .card-body .locNTime .loc .cIcon,
+.card .card-body .locNTime .time .cIcon {
+  margin-top: -3px;
+}
+
+.pageinationContainer {
+  width: 100%;
+}
+.pageinationContainer .pagination .page-item .page-link {
+  border-color: #B9BDCF;
+  color: #B9BDCF;
+  width: 36px;
+  height: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25.06px;
+  text-align: center;
+}
+.pageinationContainer .pagination .page-item .page-link:hover {
+  border-color: #1E86FF;
+  color: #1E86FF;
+  background-color: #FFFFFF;
+}
+.pageinationContainer .pagination .page-item .page-link:focus {
+  border-color: #1E86FF;
+  background-color: #1E86FF;
+  color: #FFFFFF;
+  outline: none;
+  box-shadow: none;
+}
+.pageinationContainer .pagination .page-item .page-link .pIcon:hover {
+  color: #1E86FF;
+}
+.pageinationContainer .pagination .page-item .page-link .pIcon:focus {
+  color: #FFFFFF;
+}
+
+.detailsContainer {
+  background-color: #f0f0f0;
+  padding: 32px 120px;
+  font-family: "Poppins", sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.detailsContainer .back {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1E86FF;
+  margin-bottom: 36px;
+  cursor: pointer;
+}
+.detailsContainer .back .bIcon {
+  transform: rotate(180deg);
+  margin-top: -3px;
+}
+.detailsContainer .subTitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #B9BDCF;
+  margin-bottom: 16px;
+}
+.detailsContainer .email {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #334680;
+}
+.detailsContainer .email a {
+  color: #1E86FF;
+  text-decoration: none;
+}
+.detailsContainer .position {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  color: #334680;
+  margin-top: 65px;
+}
+.detailsContainer .btn {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.06px;
+  border: 1px solid #334680;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  margin-top: -28px;
+  margin-left: 330px;
+}
+.detailsContainer .btn:hover {
+  border-color: #334680 !important;
+  cursor: text;
+}
+.detailsContainer .time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B7BCCE;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.detailsContainer .time .cIcon {
+  margin-top: -3px;
+}
+.detailsContainer .card {
+  padding: 0;
+  margin-bottom: 32px;
+  margin-top: 35px;
+  background-color: transparent !important;
+  border: none !important;
+}
+.detailsContainer .card .imgContainer {
+  width: 42px;
+}
+.detailsContainer .card .imgContainer .img-fluid {
+  width: 42px;
+}
+.detailsContainer .card .card-body {
+  font-family: "Roboto", sans-serif;
+}
+.detailsContainer .card .card-body .card-text {
+  font-size: 18px;
+  line-height: 21.09px;
+  margin-bottom: 10px;
+}
+.detailsContainer .card .card-body .loc {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #B7BCCE;
+}
+.detailsContainer .card .card-body .loc .cIcon {
+  margin-top: -3px;
+}
+.detailsContainer .announcement {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #334680;
+}
+
+.createdBy {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.07px;
+  text-align: center;
+  color: #B9BDCF;
+  margin-top: 155px;
+}
+.createdBy a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+.createdBy a:hover {
+  color: #1E86FF;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 952px) {
+  body {
+    padding: 32px 52px 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 32px 76px 24px;
+  }
+  .heroImg {
+    background-position: bottom center;
+  }
+  .heroImg .input-group {
+    width: 85%;
+  }
+  .heroImg .input-group #button-addon2 {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    padding: 12px;
+  }
+  .heroImg {
+    background-position: bottom center;
+    margin-bottom: 29px;
+  }
+  .heroImg .input-group #button-addon2 {
+    width: 146px;
+  }
+  .card {
+    margin-bottom: 23px;
+  }
+  .card .card-body .card-title {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+  .card .card-body .locNTime {
+    position: relative;
+    margin-top: 26px;
+  }
+  .detailsContainer {
+    padding: 12px;
+  }
+  .detailsContainer .position {
+    margin-top: 36px;
+  }
+  .detailsContainer .btn {
+    margin-top: 4px;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .createdBy {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

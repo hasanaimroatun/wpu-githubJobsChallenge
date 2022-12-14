@@ -44,10 +44,26 @@ $cBlue2: #334680;
     color: $cBlue2;
 }
 
+@mixin btnStyle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.06px;
+    border: 1px solid $cBlue2;
+    border-radius: 4px;
+}
+
+@mixin iLocTime {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: $cGrey2;
+}
+
 // css
 body {
     padding: 32px 120px 24px;
     text-align: left;
+    background-color: lighten($cGrey3, 20%) !important;
 }
 
 .title{
@@ -128,6 +144,7 @@ body {
         margin-left: 12px;
         margin-bottom: 15px;
         .form-check-input:focus {
+            background-color: $cWhite !important;
             @include inpFocus;
         }
         .form-check-label {
@@ -137,6 +154,7 @@ body {
 
     form {
         position: relative;
+
         .form-label {
             margin-top: 15px;
             margin-bottom: 14px;
@@ -154,6 +172,7 @@ body {
         .form-control {
             height: 48px;
             margin-bottom: 24.5px;
+            background-color: $cWhite !important;
             @include inpBox;
             @include inpText;
     
@@ -165,5 +184,332 @@ body {
                 @include inpText;
             }
         }
+    }
+}
+
+.card {
+    padding: 12px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    background-color: $cWhite !important;
+    border: none !important;
+
+    .imgContainer {
+        padding: 0;
+        margin-top: -7px;
+        width: 90px;
+        height: 90px;
+        .img-fluid {
+            width: 90px;
+        }
+    }
+
+    .card-body {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        font-family: $roboto;
+        color: $cBlue2;
+
+        .card-text {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14.06px;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21.09px;
+            margin-bottom: 12px;
+        }
+        
+        .btn {
+            @include btnStyle;
+
+            &:hover,
+            &:focus {
+                color: $cWhite;
+                background-color: $cBlue2;
+            }
+        }
+
+        .locNTime {
+            white-space: nowrap;
+            margin-top: -12px;
+            position: absolute;
+            right: 0;
+
+            .loc,
+            .time {
+                @include iLocTime;
+                
+                .cIcon {
+                    margin-top: -3px;
+                }
+            }
+        }
+        
+    }
+}
+
+.pageinationContainer {
+    width: 100%;
+    .pagination {
+        .page-item {
+            .page-link{
+                border-color: $cGrey1;
+                color: $cGrey1;
+                width: 36px;
+                height: 36px;
+                font-family: $roboto;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 25.06px;
+                text-align: center;
+
+                &:hover {
+                    border-color: $cBlue1;
+                    color: $cBlue1;
+                    background-color: $cWhite;
+                }
+
+                &:focus {
+                    border-color: $cBlue1;
+                    background-color: $cBlue1;
+                    color: $cWhite;
+                    outline: none;
+                    box-shadow: none;
+                }
+
+                .pIcon {
+                    &:hover {
+                        color: $cBlue1;
+                    }
+                    &:focus {
+                        color: $cWhite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailsContainer {
+    background-color: lighten($cGrey3, 20%);
+    padding: 32px 120px;
+    font-family: $poppins;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    .back {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $cBlue1;
+        margin-bottom: 36px;
+        cursor: pointer;
+
+        .bIcon {
+            transform: rotate(180deg);
+            margin-top: -3px;
+        }
+    }
+
+    .subTitle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: $cGrey1;
+        margin-bottom: 16px;
+    }
+
+    .email {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $cBlue2;
+        
+        a {
+            color: $cBlue1;
+            text-decoration: none;
+        }
+    }
+
+    .position {
+        font-family: $roboto;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.13px;
+        color: $cBlue2;
+        margin-top: 65px;
+    }
+
+    .btn {
+        @include btnStyle;
+        font-family: $roboto;
+        position: absolute;
+        margin-top: -28px;
+        margin-left: 330px;
+        &:hover {
+            border-color: $cBlue2 !important;
+            cursor: text;
+        }
+    }
+
+    .time {
+        @include iLocTime;
+        margin-top: 10px;
+        font-family: $roboto;
+
+        .cIcon {
+            margin-top: -3px;
+        }
+    }
+
+    .card {
+        padding: 0;
+        margin-bottom: 32px;
+        margin-top: 35px;
+        background-color: transparent !important;
+        border: none !important;
+
+        .imgContainer {
+            width: 42px;
+            .img-fluid {
+                width: 42px;
+            }
+        }
+
+        .card-body {
+            font-family: $roboto;
+            .card-text {
+                font-size: 18px;
+                line-height: 21.09px;
+                margin-bottom: 10px;
+            }
+
+            .loc {
+                @include iLocTime;
+        
+                .cIcon {
+                    margin-top: -3px;
+                }
+            }
+        }
+    }
+
+    .announcement {
+        font-family: $roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $cBlue2;
+    }
+}
+
+.createdBy {
+    font-family: $montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.07px;
+    text-align: center;
+    color: $cGrey1;
+    margin-top: 155px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            color: $cBlue1;
+        }
+    }
+}
+
+.none {
+    display: none;
+}
+
+
+
+// responsive breakpoint
+@media screen and (max-width: 952px) {
+    body {
+        padding: 32px 52px 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 32px 76px 24px;
+    }
+
+    .heroImg {
+        background-position: bottom center;
+
+        .input-group {
+            width: 85%;
+
+            #button-addon2 {
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding: 12px;
+    }
+    
+    .heroImg {
+        background-position: bottom center;
+        margin-bottom: 29px;
+        
+        .input-group {
+            #button-addon2 {
+                width: 146px;
+            }
+        }
+    }
+    
+    .card {
+        margin-bottom: 23px;
+    
+        .card-body {
+            .card-title {
+                font-size: 16px;
+                line-height: 18.75px;
+            }
+    
+            .locNTime {
+                position: relative;
+                margin-top: 26px;
+            }
+        }
+    }
+
+
+    .detailsContainer {
+        padding: 12px;
+    
+        .position {
+            margin-top: 36px;
+        }
+    
+        .btn {
+            margin-top: 4px;
+            position: relative;
+            margin-top: 0;
+            margin-left: 0;
+        }
+    }
+
+    .createdBy {
+        margin-top: 30px;
     }
 }
